@@ -197,7 +197,7 @@ hide-identity: yes
 hide-version: yes
 use-caps-for-id: yes
 prefetch: yes
-private-address: 10.0.0.0/8
+private-address: 192.168.100.0/24
 private-address: fd42:42:42:42::/112
 private-address: 172.16.0.0/12
 private-address: 192.168.0.0/16
@@ -782,7 +782,7 @@ persist-key
 persist-tun
 keepalive 10 120
 topology subnet
-server 10.8.0.0 255.255.255.0
+server 192.168.100.1 255.255.255.0
 ifconfig-pool-persist ipp.txt" >>/etc/openvpn/server.conf
 
 	# DNS resolvers
